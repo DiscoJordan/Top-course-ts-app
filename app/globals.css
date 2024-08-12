@@ -34,13 +34,15 @@
 	--callout-border-rgb: 172, 175, 176;
 	--card-rgb: 180, 185, 188;
 	--card-border-rgb: 131, 134, 135;
-	--black: #38434E,
-	--white: white,
-	--primary: #7653FC,
-	--red: #FC836D,
-	--green: #1DC37E,
-	--green-light: #C8F8E4,
-	--font-family: 'Inter',
+	--black: #38434E,;
+	--gray-light:#EBEBEB;
+	--white: white;
+	--primary: #7653FC;
+	--primary-hover: #523aaf;
+	--red: #FC836D;
+	--green: #1DC37E,;
+	--green-light: #C8F8E4;
+	--font-family: 'Inter';
 }
 
 @media (prefers-color-scheme: dark) {
