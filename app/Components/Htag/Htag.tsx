@@ -1,6 +1,6 @@
 import React from "react";
 import { HtagProps } from "./Htag.props";
-import styles from './Htag.module.css'
+import styles from './Htag.module.css';
 
 function Htag({ tag, children }: HtagProps): JSX.Element {
   switch (tag) {

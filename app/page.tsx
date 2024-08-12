@@ -1,11 +1,15 @@
 
 // import styles from "./page.module.css";
+'use client'
 import Htag from "./Components/Htag/Htag";
 import Button from "./Components/Button/Button";
 import P from "./Components/P/P";
 import Tag from "./Components/Tag/Tag";
+import Rating from "./Components/Rating/Rating";
+import { useState } from "react";
 export default function Home(): JSX.Element {
 
+  const [rating, setRating] = useState(4);
   return (
     <>
     <Htag tag='h1'>Текст</Htag>
@@ -24,6 +28,7 @@ export default function Home(): JSX.Element {
     <Tag color="green">Та green</Tag>
     <Tag size={'s'} color="gray">Та gray</Tag>
     <Tag size={'s'} color="green">Та grren</Tag>
+    <Rating rating={rating} isEditable={true} setRating={setRating} />
 
 
     </>
