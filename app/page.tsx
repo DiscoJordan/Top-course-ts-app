@@ -3,6 +3,7 @@
 import Htag from "./Components/Htag/Htag";
 import Button from "./Components/Button/Button";
 import P from "./Components/P/P";
+import Tag from "./Components/Tag/Tag";
 export default function Home(): JSX.Element {
 
   return (
@@ -17,6 +18,12 @@ export default function Home(): JSX.Element {
     <P>Та хуйлан</P>
     <P size="s">Та хуйлан</P>
     <P size={'l'}>Та хуйлан</P>
+
+    <Tag size={'m'} color="primary">Та primary</Tag>
+    <Tag size={'s'} color="red">Та red</Tag>
+    <Tag color="green">Та green</Tag>
+    <Tag size={'s'} color="gray">Та gray</Tag>
+    <Tag size={'s'} color="green">Та grren</Tag>
 
 
     </>
