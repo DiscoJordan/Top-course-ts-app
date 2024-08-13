@@ -5,9 +5,9 @@ import { HeaderProps } from "./Header.props";
 
 function P({ ...props }: HeaderProps): JSX.Element {
   return (
-    <div {...props}>
+    <header {...props}>
       Header
-    </div>
+    </header>
   );
 }
 

@@ -4,6 +4,7 @@ import "./globals.css";
 import Sidebar from "./Components/Sidebar/Sidebar";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
+import styles from "./page.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,16 +18,16 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>): JSX.Element {
+  console.log("Rendering RootLayout");
   return (
     <html lang="en">
       <body className={inter.className}>
-
-        <Header/>
-        <div>
-          <Sidebar/>
-          {children}
+        <div className={styles.wrapper}>
+          <Header className={styles.header} />
+          <Sidebar className={styles.sidebar} />
+          <div className={styles.body}>{children}</div>
+          <Footer className={styles.footer} />
         </div>
-        <Footer/>
       </body>
     </html>
   );

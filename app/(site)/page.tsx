@@ -6,6 +6,7 @@ import P from "../Components/P/P";
 import Tag from "../Components/Tag/Tag";
 import Rating from "../Components/Rating/Rating";
 import { useState } from "react";
+
 export default function Home(): JSX.Element {
   const [rating, setRating] = useState(4);
   return (
