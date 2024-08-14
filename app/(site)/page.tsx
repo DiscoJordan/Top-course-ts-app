@@ -1,16 +1,19 @@
 // import styles from "./page.module.css";
-"use client";
+// "use client";
 import Htag from "../Components/Htag/Htag";
 import Button from "../Components/Button/Button";
 import P from "../Components/P/P";
 import Tag from "../Components/Tag/Tag";
 import Rating from "../Components/Rating/Rating";
-import { useState } from "react";
+import { Menu } from "./Components/Menu/Menu";
 
-export default function Home(): JSX.Element {
-  const [rating, setRating] = useState(4);
+
+
+export default async function Home() {
   return (
     <>
+      {/* <div>{JSON.stringify(menu)}</div> */}
+     <Menu/>
       <Htag tag="h1">Текст</Htag>
       <Htag tag="h2">Текст2</Htag>
       <Htag tag="h3">Текст3</Htag>
@@ -41,7 +44,7 @@ export default function Home(): JSX.Element {
       <Tag size={"s"} color="green">
         Та grren
       </Tag>
-      <Rating rating={rating} isEditable={true} setRating={setRating} />
+      <Rating rating={4} isEditable={true} />
     </>
   );
 }
